@@ -1,0 +1,61 @@
+title: Dewan Mukto's Website
+description: Explore captivating stories, insightful articles, innovative apps, and problem-solving insights from a versatile writer, developer, and marketer.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Author
+author-name:    Dewan Mukto
+author-image:   Dreamstudio-lowpoly-pfp.png
+author-job:     Writer, Developer, Marketer
+author-email:   dewanmukto@gmail.com # Add your email for contant form.
+author-twitter: dewan_mukto # Add your twitter account
+about-author:   ""
+
+# Social settings
+social-twitter:   dewan_mukto
+social-facebook: dewanmukto
+social-github:    diztil
+social-pinterest: 
+social-instagram: dewanmukto
+social-youtube:
+social-vk:   
+social-linkedin: dewanmukto
+
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1
+
+# Comment Section (Disqus)
+disqus-identifier:  # Add your shortname for Disqus Comment. For example mr-brown
+
+# Build settings
+markdown: kramdown
+kramdown: # 见<https://kramdown.gettalong.org/options.html>
+  input: GFM # 见<http://jekyllcn.com/docs/configuration/#kramdown>
+  syntax_highlighter_opts: # 可见<https://kramdown.gettalong.org/syntax_highlighter/rouge.html>
+    block:
+      disable: true # 关掉代码块默认的高亮，换用prismjs
+      line_numbers: false #渲染出来的效果好鬼畜
+    span:
+      disable: true
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-paginate
+
+paginate: 7
+paginate_path: "/page/:num/"
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
